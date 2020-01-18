@@ -1,5 +1,8 @@
 # Multi-Agent DDPG in Ray/RLlib
 
+## Please tell me if you have problems with this code
+MADDPG is not in a 100% bug free state, and hence is in /contrib in rllib. Getting MADDPG fully working is important to me. If you have a problem, please let me know.
+
 ## Notes
 - The codes in [OpenAI/MADDPG](https://github.com/openai/maddpg) were refactored in RLlib, and test results are given in `./plots`.
     - It was tested on 7 scenarios of [OpenAI/Multi-Agent Particle Environment (MPE)](https://github.com/openai/multiagent-particle-envs).
