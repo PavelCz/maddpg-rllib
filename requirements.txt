@@ -6,6 +6,6 @@ tensorflow==1.15.0
 psutil
 setproct
 requests
-ray[tune]
+ray[rllib]
 pandas
 box2d-py
