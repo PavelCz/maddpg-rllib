@@ -1,0 +1,11 @@
+ray==0.8.0
+gym>=0.15.4
+numpy>=1.18.0
+tensorflow-probability==0.7.0
+tensorflow==1.15.0
+psutil
+setproct
+requests
+ray[tune]
+pandas
+box2d-py
