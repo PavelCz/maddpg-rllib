@@ -11,6 +11,7 @@ From: tensorflow/tensorflow:nightly-gpu-py3
     apt-get install -y libxrender1
     pip install --progress-bar off psutil
     pip install --progress-bar off -U https://s3-us-west-2.amazonaws.com/ray-wheels/latest/ray-0.8.0.dev2-cp36-cp36m-manylinux1_x86_64.whl
+    pip install --progress-bar off ray[rllib]
     pip install --progress-bar off requests
 
     # Multi-agent particle environments
@@ -23,6 +24,7 @@ From: tensorflow/tensorflow:nightly-gpu-py3
     pip install --progress-bar off pandas
     pip install --progress-bar off setproctitle
     pip install --progress-bar off box2d-py
+    pip install --progress-bar off tensorflow-probability
 
 %environment
     export SHELL=/bin/bash
