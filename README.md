@@ -4,6 +4,7 @@
 MADDPG is not in a 100% bug free state, and hence is in /contrib in rllib. Getting MADDPG fully working is important to me. If you have a problem, please let me know.
 
 ## Notes
+-This was forked from wsjeons's original repo due to lack of maintenance
 - The codes in [OpenAI/MADDPG](https://github.com/openai/maddpg) were refactored in RLlib, and test results are given in `./plots`.
     - It was tested on 7 scenarios of [OpenAI/Multi-Agent Particle Environment (MPE)](https://github.com/openai/multiagent-particle-envs).
         - `simple`, `simple_adversary`, `simple_crypto`, `simple_push`, `simple_speaker_listener`, `simple_spread`, `simple_tag`
