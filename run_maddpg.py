@@ -61,6 +61,8 @@ def parse_args():
                         help="length of multistep value backup")
     parser.add_argument("--num-units", type=int, default=64,
                         help="number of units in the mlp")
+    parser.add_argument("--replay-buffer", type=int, default=1000000,
+                        help="size of replay buffer in training")
 
     # Checkpoint
     parser.add_argument("--checkpoint-freq", type=int, default=7500,
@@ -150,7 +152,7 @@ def main(args):
                 "tau": 0.01,
 
                 # --- Replay buffer ---
-                "buffer_size": int(1e6),
+                "buffer_size": args.replay_buffer,
 
                 # --- Optimization ---
                 "actor_lr": args.lr,
