@@ -1,7 +1,6 @@
 # MADDPG in Ray/RLlib
 
-## Please tell me if you have problems with this code
-MADDPG is not in a 100% bug free state, and hence is in /contrib in rllib. Getting MADDPG fully working is important to me. If you have a problem, please let me know.
+## This implementation of MADDPG generally does not work for environments other than the reference MPE environments. We have tried many things to fix it and have no idea what the problem is.
 
 ## Notes
 -This was forked from wsjeons's original repo due to lack of maintenance
