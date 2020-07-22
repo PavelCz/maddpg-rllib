@@ -1,6 +1,6 @@
 # MADDPG in Ray/RLlib
 
-## This implementation of MADDPG generally does not work for environments other than the reference MPE environments. We have tried many things to fix it and have no idea what the problem is.
+## This implementation of MADDPG is for research purposes only. If you want to learn something, use parameter sharing instead.
 
 ## Notes
 -This was forked from wsjeons's original repo due to lack of maintenance
