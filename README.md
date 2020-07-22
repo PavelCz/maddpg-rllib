@@ -1,6 +1,6 @@
 # MADDPG in Ray/RLlib
 
-## This implementation of MADDPG is for research purposes only. If you want to learn something, use parameter sharing instead.
+## This implementation of MADDPG is recommended for research purposes only. If you want to actually learn something, use parameter sharing.
 
 ## Notes
 -This was forked from wsjeons's original repo due to lack of maintenance
