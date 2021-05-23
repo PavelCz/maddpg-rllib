@@ -4,7 +4,7 @@ from __future__ import print_function
 
 from gym.spaces import Discrete, Box, MultiDiscrete
 from ray import rllib
-from make_env import make_env
+from env.make_env import make_env
 
 import numpy as np
 import time
