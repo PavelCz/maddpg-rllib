@@ -4,7 +4,7 @@ numpy>=1.18.0
 tensorflow-probability==0.7.0
 tensorflow==1.15.0
 psutil
-setproct
+# setproct
 requests
 ray[rllib]
 pandas
