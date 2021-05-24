@@ -81,9 +81,10 @@ def parse_args():
 
 
 def main(args):
-    ray.init(redis_max_memory=int(1e10), object_store_memory=int(3e9))
+    ray.init(  # redis_max_memory=int(1e10),
+             object_store_memory=int(3e9))
     MADDPGAgent = maddpg.MADDPGTrainer.with_updates(
-        mixins=[CustomStdOut]
+        ## mixins=[CustomStdOut]
     )
     register_trainable("MADDPG", MADDPGAgent)
 
@@ -127,6 +128,7 @@ def main(args):
             "local_dir": args.local_dir,
             "restore": args.restore,
             "config": {
+                # 'render_env': True,
                 # === Log ===
                 "log_level": "ERROR",
 
@@ -158,7 +160,7 @@ def main(args):
                 "actor_lr": args.lr,
                 "critic_lr": args.lr,
                 "learning_starts": args.train_batch_size * args.max_episode_len,
-                "sample_batch_size": args.sample_batch_size,
+                # "sample_batch_size": args.sample_batch_size,
                 "train_batch_size": args.train_batch_size,
                 "batch_mode": "truncate_episodes",
 
